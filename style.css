@@ -1,0 +1,87 @@
+* {
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  outline: 0;
+}
+body {
+  padding: 0px;
+  margin: 3em;
+  color: #555;
+}
+ul {
+  list-style: none;
+}
+#kwskbox {
+  position: absolute;
+  left:250px;
+  top:100px;
+}
+td {
+  vertical-align: top;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+}
+tr:last-child > td:last-child {
+  border-bottom: none;
+}
+h1 {
+  font-size: 2em;
+  color: #E0A0A0;
+}
+a, .a{
+  display: block;
+  text-decoration: none;
+  margin: 1em;
+  padding: 15px;
+  padding-left: 0.5em;
+  color: #999;
+  cursor: pointer;
+  overflow: hidden;
+}
+a:hover, .a:hover{
+  border-left: 0.5em #ccccff solid;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 1em;
+  padding-right: 0em;
+  background: #f6f9ff;
+  color: #222;
+  font-size:15px;
+}
+a.normal, .a.normal{
+  padding:0;
+  margin: 1px 0 1px 0;
+  display: inline-block;
+  *display: inline;/* かわいいおほしさま */
+  *zoom: 1;/* かわいいおほしさま、其の弍 */
+  color: #FF8080;
+}
+a.normal:hover, .a.normal:hover{
+  padding:0;
+  margin: 0;
+  border: none;
+  padding: none;
+  background: none;
+  color: #222;
+}
+a.inline, .a.inline{
+  display: inline;
+  padding: 1em;
+  margin: 1em;
+}
+a.inline:hover, .a.inline:hover{
+  border: none;
+  padding: 1em;
+  margin: 1em;
+}
+.new{
+  position: relative;
+}
+.new:before{
+  content: "NEW!";
+  font-size: 10px;
+  color: #EE2222;
+  position: absolute;
+  top: 0px;
+  margin-left: -10px;
+}
