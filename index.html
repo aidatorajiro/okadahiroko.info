@@ -13,17 +13,12 @@
       switching_item = document.getElementsByClassName('switching');
       
       function switching(idname) {
-      	if (indexbox_display == idname) {
-      	  document.getElementById(idname).style.display='none';
-      	  indexbox_display='';
-      	} else {
       	  if (indexbox_display) {
       	  	document.getElementById(indexbox_display).style.display='none';
       	  }
       	  indexbox_display=idname;
       	  document.getElementById(idname).style.display='block';
       	}
-      }
     </script>
     
     <style>
