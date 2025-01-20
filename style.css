@@ -49,6 +49,7 @@ a:hover, .a:hover{
 a.normal, .a.normal{
   padding: 0;
   margin: 0;
+  border: none;
   display: inline-block;
   color: #FF8080;
 }
