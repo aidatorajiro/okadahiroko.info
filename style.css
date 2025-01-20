@@ -29,22 +29,38 @@ h1 {
   color: #E0A0A0;
 }
 a, .a{
-  display: block;
-  text-decoration: none;
   margin: 1em;
   padding: 15px;
   padding-left: 0.5em;
-  color: #999;
+  color: #666;
   cursor: pointer;
-  overflow: hidden;
+  text-decoration: none;
+  display: block;
 }
-a:hover, .a:hover{
+a:hover, .a:hover {
   border-left: 0.5em #ccccff solid;
   padding-left: 1em;
   padding-right: 0em;
   background: #f6f9ff;
   color: #222;
   font-size:16px;
+}
+summary {
+  margin: 1em;
+  padding: 15px;
+  padding-left: 0;
+  margin-left: 8px;
+  color: #666;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+}
+summary:hover {
+  background: #f6f9ff;
+}
+details[open] > summary {
+    color: #222;
+
 }
 a.normal, .a.normal{
   padding: 0;
@@ -74,3 +90,4 @@ a.normal:hover, .a.normal:hover{
     margin: 0.5em;
   }
 }
+
