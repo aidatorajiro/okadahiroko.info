@@ -20,7 +20,11 @@
     </script>
     
     <style>
-    
+
+    summary {
+      cursor: pointer;
+      user-select: none;
+    }
     
     .indexbox {
       display: none;
@@ -61,9 +65,6 @@
     	padding-right: 10px;
     	border-bottom: 2px #223355 solid;
     	display:inline-block;
-    	
-    	*display: inline;/* きれいなおほしさま */
-        *zoom: 1;/* きれいなおほしさま、其の弍 */
     }
     </style>
   </head>
@@ -82,21 +83,18 @@
       <a href="http://www.nadiff-online.com/?pid=60329882">DVD Restaurant No Dress Code</a>
       <a href="https://gekishiki.com/index.html">Alternative puppet theatre Gekidan &#9733; Shiki</a>
       <a href="https://photos.app.goo.gl/LDKd6KwokniFxcf96">作品資料（日本語）</a>
-      <span class="a switching" onclick="switching('links')">Links</span>
       <span class="a switching" onclick="switching('news')">News</span>
       <a href="https://twitter.com/hirokook" >Twitter @hirokook</a>
       <a href="https://www.instagram.com/hiroko10000/" >Instagram @hiroko10000</a>
+      <details>
+        <summary>Other Links</summary>
+        <a href="http://www.wican.org/">WiCAN</a>
+        <a href="http://mizuma-art.co.jp/">MIZUMA ART GALLERY</a>
+      </details>
     </nav>
     </div>
     
     <div id="c2">
-    <div style="height:1em;visibility:hidden;">******</div>
-    <div id="links" class="indexbox">
-      <a href="http://www.wican.org/">WiCAN</a>
-      <a href="http://mizuma-art.co.jp/">MIZUMA ART GALLERY</a>
-      <a href="http://hirokookada.at.webry.info/">Hiroko's blog</a>
-    </div>
-    
     <section id="news" class="indexbox">
 <span class="date">2024.04.01:</span><br>
 2024/12/26に開催したイベントCelebrate for ME のアーカイブWebを作りました。<br>
