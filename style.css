@@ -45,22 +45,38 @@ a:hover, .a:hover {
   color: #222;
   font-size:16px;
 }
+
 summary {
-  margin: 1em;
+  margin: 0;
   padding: 15px;
   padding-left: 0;
-  margin-left: 0;
   color: #666;
   cursor: pointer;
-  overflow: hidden;
+  overflow: visible;
   text-decoration: none;
+}
+details {
+  margin: 1em;
+  margin-left: 0;
+  padding: 0;
+  overflow: hidden;
 }
 summary:hover {
   background: #f6f9ff;
 }
 details[open] > summary {
     color: #222;
-
+    position: relative;
+}
+details[open] > summary::after {
+  content: '';
+  border: 1px #222 solid;
+  position: absolute;
+  display: block;
+  top: 54px;
+  left: 3px;
+  width: 0px;
+  height: 100vh;
 }
 a.normal, .a.normal{
   padding: 0;
