@@ -40,8 +40,6 @@ a, .a{
 }
 a:hover, .a:hover{
   border-left: 0.5em #ccccff solid;
-  padding-top: 12px;
-  padding-bottom: 12px;
   padding-left: 1em;
   padding-right: 0em;
   background: #f6f9ff;
