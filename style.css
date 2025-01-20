@@ -54,7 +54,7 @@ a.normal, .a.normal{
   color: #FF8080;
 }
 a.normal:hover, .a.normal:hover{
-  background: #eee;
+  background: #f6f9ff;
   color: #222;
 }
 a.inline, .a.inline{
