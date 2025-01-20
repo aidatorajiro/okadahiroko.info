@@ -3,26 +3,42 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Okada Hiroko HomePage 岡田裕子 ホームページ</title>
     <link rel="stylesheet" href="style.css"/>
-    
-    <script type="text/javascript">
-      indexbox_display="news"; // 最初から表示させる
-      switching_item = document.getElementsByClassName('switching');
-      
-      function switching(idname) {
-      	  if (indexbox_display) {
-      	  	document.getElementById(indexbox_display).style.display='none';
-      	  }
-      	  indexbox_display=idname;
-      	  document.getElementById(idname).style.display='block';
-      	}
-    </script>
-    
     <style>
-
     main {
-      padding-bottom: 25em;
+      padding: 0;
+      margin: 0;
+      padding-bottom: 5em;
+      width: 100%;
+      display: flex;
+    }
+
+    .mail {
+      color:gray;
+      margin:auto;
+      text-align:center;
+    }
+
+    .mail>a {
+      padding: 1em;
+      margin-bottom: 2em;
+    }
+
+    .mail>a:hover{
+      border: none;
+    }
+
+    .mail>p {
+      font-size: 10px;
+    }
+
+    #c {
+      padding: 0;
+      margin: 0;
+      width: 300px;
+      min-width: 300px;
     }
 
     summary {
@@ -35,30 +51,11 @@
     }
     
     #news {
-      display:block; /* 最初から表示させる */
+      height: 500px;
+      display:block;
       border:1px #443366 solid;
       overflow:scroll;
       padding:1.5em;
-    }
-    
-    #c {
-      float: left;
-      width:300px;
-    }
-    
-    #c2 {
-      margin-left: 350px;
-      margin-right: 1em;
-      width:auto;
-      height: 500px;
-    }
-    
-    #c2 > * {
-    	height: 100%;
-    }
-    
-    .iranai {
-    	text-decoration:line-through;
     }
     
     .date {
@@ -68,17 +65,55 @@
     	padding-left: 5px;
     	padding-right: 10px;
     	border-bottom: 2px #223355 solid;
-    	display:inline-block;
+    	display: inline-block;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+      margin: auto;
+      max-width: 400px;
+    }
+
+    h1 {
+      margin-bottom:32px;
+    }
+    h1 > span {
+      font-size: 1em;
+      letter-spacing: 0.5em;
+      display: inline-block;
+    }
+
+    @media only screen and (max-width: 900px) {
+      main {
+        flex-wrap: wrap;
+      }
+      #c {
+        width: auto;
+        margin-bottom: 10em;
+        min-width: none;
+      }
+      #news {
+        overflow: visible;
+        height: auto;
+        padding: 0;
+        border: none;
+        border-top: 10px #223355 solid;
+      }
+      a.normal {
+        word-break: break-all;
+        word-wrap: break-word;
+      }
     }
     </style>
   </head>
-  <body style="">
+  <body>
     <!-- STA Main -->
     <div id="h">
-    <h1 style="letter-spacing: 0.5em;margin-bottom:32px;">OKADA Hiroko      岡田裕子</h1>
+    <h1><span>OKADA</span> <span>Hiroko</span> <span>岡田裕子</span></h1>
     </div>
     
-    <main id="cc">
+    <main>
     <div id="c">
     <nav id="menu">
       <a href="about.html">About</a>
@@ -87,7 +122,6 @@
       <a href="http://www.nadiff-online.com/?pid=60329882">DVD Restaurant No Dress Code</a>
       <a href="https://gekishiki.com/index.html">Alternative puppet theatre Gekidan &#9733; Shiki</a>
       <a href="https://photos.app.goo.gl/LDKd6KwokniFxcf96">作品資料（日本語）</a>
-      <span class="a switching" onclick="switching('news')">News</span>
       <a href="https://twitter.com/hirokook" >Twitter @hirokook</a>
       <a href="https://www.instagram.com/hiroko10000/" >Instagram @hiroko10000</a>
       <details>
@@ -98,8 +132,8 @@
     </nav>
     </div>
     
-    <div id="c2">
-    <section id="news" class="indexbox">
+    <section id="news">
+<h2>NEWS</h2>
 <span class="date">2024.04.01:</span><br>
 2024/12/26に開催したイベントCelebrate for ME のアーカイブWebを作りました。<br>
 <a class="normal" href="https://sites.google.com/view/celebrateforme/">Celebrate for ME Website 公式ウェブサイト</a><br><br>
@@ -143,7 +177,7 @@ March 16th (Fri.) – 25th (Sun.), 2018 [10-day Exhibition]<br>
 <a class="normal" href="http://i-a-f-t.net/iaft1718_about/">http://i-a-f-t.net/iaft1617_day1/</a><br>
 <br>
 <span class="date">2016.11.5:</span><br>
-<img src="img/title_rogo.jpg" style="width:100%"><br><br><br>
+<img src="img/title_rogo.jpg"><br><br><br>
 オルタナティブ人形劇団「劇団★死期」が<br>
 Interdisciplinary Art Festival Tokyo 16/17「私たちの時代、時のタイポロジー」<br>
 Day 1に参加します。<br>
@@ -215,7 +249,7 @@ Whose place is this?” at MOT : Museum Contemporary Art of Tokyo <br>
 <br>
 「ここはだれの場所？」の関連企画として岡田裕子がオルタナティブ人形劇団「劇団★死期」としての子ども向けワークショップを行います。 <br>
 <a class="normal" href="http://www.mot-art-museum.jp/edu/workshop.html">http://www.mot-art-museum.jp/edu/workshop.html</a><br><br>
-<img src="img/1.jpg" width="481" style="display:block;margin:0 auto;"/><br><br>
+<img src="img/1.jpg" style="display:block;margin:0 auto;"/><br><br>
 2015年夏は、韓国国立現代美術館 MMCA Residency in ChangDongにて滞在制作を行っています。<br>
 Now, I am in MMCA Residency in ChangDong in SEOUL, for my art work.<br>
 <a class="normal" href="http://www.mmca.go.kr/eng/artStudio/artStudioMain.do?menuId=7000000000">http://www.mmca.go.kr/eng/artStudio/artStudioMain.do?menuId=7000000000</a><br>
@@ -224,18 +258,17 @@ Now, I am in MMCA Residency in ChangDong in SEOUL, for my art work.<br>
 ８月末ごろ刊行予定！これぞおとなもこどもも楽しめる、アート話も満載の児童文学の登場です！<br>
 詳細＆ご予約はこちら<br>
 <a class="normal" href="http://artdiver.moo.jp/?p=1191">http://artdiver.moo.jp/?p=1191</a><br><br>
-<img src="img/0002.jpg" height="481" style="display:block;margin:0 auto;"/><br><br>
+<img src="img/0002.jpg" style="display:block;margin:0 auto;"/><br><br>
 <br>
     </section>
-    </div>
     </main>
     
     <!-- END Main -->
     <!-- STA Copyright -->
     <div>
-    <div style="font-size:10px;color:gray;margin:auto;text-align:center;">
-      <a href="mailto:okadahirokoinfo@gmail.com" class="inline">For any questions, please contact via mail</a><br><br>
-      Copyright ©Okada Hiroko All Rights Reserved.<br>
+    <div class="mail">
+      <a href="mailto:okadahirokoinfo@gmail.com" class="normal">For any questions, please contact via mail</a>
+      <p>Copyright ©Okada Hiroko All Rights Reserved.</p>
     </div>
     </div>
     <!-- END Copyright -->
